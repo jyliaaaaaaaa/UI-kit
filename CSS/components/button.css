@@ -1,0 +1,21 @@
+.btn-blue {
+	background-color: #2d3436;
+	padding: 15px 30px;
+	border-radius: 50px;
+	color: white;
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+	text-decoration: none;
+	border: none;
+}
+
+.btn-blue:hover {
+    background-color: #5659c2; 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(109, 113, 221, 0.5); 
+}
+
+.btn-blue:active {
+    transform: translateY(-1px);
+}

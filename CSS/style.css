@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@400;700&display=swap");
+@import url("components/container.css");
+@import url("components/banner.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/card.css");
+
+
+:root {
+  --primary-blue: #0056b3;
+  --light-blue: #eef4fb;
+  --accent-blue: #00a8e8;
+  --dark-text: #2d3436; 
+  --white: #ffffff;
+  --gray-bg: #f9f9f9;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 18px; 
+  color: var(--dark-text);
+  line-height: 1.6;
+  margin: 0;
+  background-color: var(--gray-bg);
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--primary-blue); 
+  margin-top: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s; 
+}
+
+
+.profile {
+  display: flex;
+  align-items: center; 
+  gap: 40px;
+  margin: 50px 0;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  padding: 30px;
+  overflow: hidden;
+}
+
+
+.profile-text {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.profile-text p {
+  margin-bottom: 15px;
+}
+
+/* 5. Responsive */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center; /* Centre le texte sur mobile */
+    gap: 20px;
+  }
+  
+  .avatar {
+    width: 100%;
+    height: 200px;
+  }
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;            /* Un gros impact visuel */
+  font-weight: 700;           /* Très gras */
+  text-transform: uppercase;  /* Tout en majuscules pour le style "Disney/Projet" */
+  letter-spacing: 2px;        /* Un peu d'espace entre les lettres */
+  color: var(--white);        /* Si c'est dans la bannière bleue */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Donne du relief sur l'image de fond */
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  border-bottom: 3px solid var(--accent-blue);
+  
+  display: block;      
+  width: fit-content;   
+  margin: 40px auto;    
+  
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+a {
+	text-decoration:none;
+}
+
+ul {
+  text-align: left;
+  display: inline-block; 
+}
